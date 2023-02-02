@@ -1,36 +1,26 @@
 
-casillas = [" "," "," ", " ", " ", " ", " ", " ", " ", " "]
+import random
+
+casilla = [" "," "," ", " ", " ", " ", " ", " ", " "]
 
 '''
 | X | O |  | Casillas 0,1,2
 | O |   |  | Casillas 3,4,5
 |   | X |  | Casillas 6,7,8
 '''
-while :
-    posicion = int(input ("Elige una casilla [0 a 8]"))
-    casillas[posicion] = "X"
 
-    if (casillas [0] == casillas [1] == casillas [2]):
-        print("ganador")
+casilla[0] = "_"
+casilla[1] = "_"
+casilla[2] = "_"
+casilla[3] = "_"
+casilla[4] = "_"
+casilla[5] = "_"
+casilla[6] = "_"
+casilla[7] = "_"
+casilla[8] = "_"
 
-    if (casillas [3] == casillas [4] == casillas [5]):
-        print("ganador")
+print(casilla [0], casilla [1], casilla [2])
+print(casilla [3], casilla [4], casilla [5])
+print(casilla [6], casilla [7], casilla [8])
 
-    if (casillas [6] == casillas [7] == casillas [8]):
-        print("ganador")
-
-    if (casillas [0] == casillas [3] == casillas [6]):
-        print("ganador")
-
-    if (casillas [2] == casillas [5] == casillas [8]):
-        print("ganador")
-
-    if (casillas [0] == casillas [4] == casillas [8]):
-        print("ganador")
-
-    if (casillas [2] == casillas [4] == casillas [6]):
-        print("ganador")
-
-    if (casillas [1] == casillas [4] == casillas [7 ]):
-        print("ganador")
-
+posicion = int(input("Elige casilla "))
