@@ -1,20 +1,20 @@
+palabra_secreta = "gato"
 
-palabra_secreta = "patata"
 letras_correctas = []
+letras_incorrectas = []
 
-print("Juego del ahorcado")
-
-letra_pedida = input("Pide una letra ")
-
-longitud_palabra = (len(palabra_secreta))
-
-while longitud_palabra > 0:
-    print("_ ", end="")
-    longitud_palabra = longitud_palabra -1
-
-for letra in palabra_secreta:
-    if letra == letra_pedida:
-        letras_correctas.append(letra)
-        print(letras_correctas)
+while True:
+    for letra in palabra_secreta:
+        if letra in letras_correctas:
+            print (letra, end="")
         else:
-            print("_", end="")
+         print ("_ ", end="")
+
+    letra_pedida = input ("Dime una letra: ")
+
+    if letra_pedida in palabra_secreta:
+        letras_correctas.append(letra_pedida)
+    else:
+        letras_incorrectas.append(letra_pedida)
+    print("correctas" ,letras_correctas)
+    print("incorrectas " ,letras_incorrectas)

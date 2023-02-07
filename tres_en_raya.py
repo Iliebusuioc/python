@@ -24,3 +24,4 @@ print(casilla [3], casilla [4], casilla [5])
 print(casilla [6], casilla [7], casilla [8])
 
 posicion = int(input("Elige casilla "))
+ 
