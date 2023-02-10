@@ -36,3 +36,8 @@ while seguir_jugando:
     if set(letras_correctas) == set(palabra_secreta):
         seguir_jugando = False
         print("Ganas!")
+
+
+    
+
+
